@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6FFF76EF-C55D-45BE-8C92-BA0CAEDB6E9A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>nilnul.collection</RootNamespace>
+    <AssemblyName>nilnul.collection%28set</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adjectives\decorated\EmptySet%28T.cs" />
+    <Compile Include="adjectives\decorated\EmptySet.cs" />
+    <Compile Include="adjectives\decorated\SingletonSet.cs" />
+    <Compile Include="adjectives\Empty.cs" />
+    <Compile Include="adjectives\EmptyAssert.cs" />
+    <Compile Include="adjectives\EmptyX.cs" />
+    <Compile Include="adjectives\Finite.cs" />
+    <Compile Include="adjectives\Singleton.cs" />
+    <Compile Include="Algebra.cs" />
+    <Compile Include="Assertion%28TElement,TSetSingleton.cs" />
+    <Compile Include="Assertion%28TElement.cs" />
+    <Compile Include="Cardinal.cs" />
+    <Compile Include="Class.cs" />
+    <Compile Include="ClassOfSets.cs" />
+    <Compile Include="Combinate.cs" />
+    <Compile Include="EmptyEnumerableX.cs" />
+    <Compile Include="EmptySet%28T.cs" />
+    <Compile Include="EmptySet.cs" />
+    <Compile Include="EmptySetI %2812%29.cs" />
+    <Compile Include="EmptyX.cs" />
+    <Compile Include="EqualityComparer.cs" />
+    <Compile Include="EqualsX.cs" />
+    <Compile Include="Field.cs" />
+    <Compile Include="HashSet%28T,IEqualityCompaer%29.cs" />
+    <Compile Include="IEnumerableIndexOfExtension.cs" />
+    <Compile Include="InductiveI.cs" />
+    <Compile Include="InfinityI.cs" />
+    <Compile Include="IsElementOf_Extensions %2813%29.cs" />
+    <Compile Include="ListX.cs" />
+    <Compile Include="Literal.cs" />
+    <Compile Include="matrix\Dimension.cs" />
+    <Compile Include="matrix\IntToBoolMatrix.cs" />
+    <Compile Include="matrix\Matrix%28static.cs" />
+    <Compile Include="matrix\Matrix.cs" />
+    <Compile Include="matrix\MatrixX.cs" />
+    <Compile Include="matrix\square\Square.cs" />
+    <Compile Include="matrix\square\Symmetry%28static.cs" />
+    <Compile Include="NonEmptyEnumerable%28T.cs" />
+    <Compile Include="NonEmptyX.cs" />
+    <Compile Include="op\BinaryI.cs" />
+    <Compile Include="op\Compliment %28100%29.cs" />
+    <Compile Include="op\Subtract.cs" />
+    <Compile Include="op\Diff.cs" />
+    <Compile Include="op\Difference %2813%29.cs" />
+    <Compile Include="op\DifferenceI.cs" />
+    <Compile Include="op\expr\Binary.cs" />
+    <Compile Include="op\expr\BinaryI.cs" />
+    <Compile Include="op\expr\Union%28T.cs" />
+    <Compile Include="op\expr\Union2%28T,Eq .cs" />
+    <Compile Include="op\expr\Union2%28T.cs" />
+    <Compile Include="op\IEqual.cs" />
+    <Compile Include="op\Intersect.cs" />
+    <Compile Include="op\IntersectI.cs" />
+    <Compile Include="op\Intersection.cs" />
+    <Compile Include="op\IProperSubSet.cs" />
+    <Compile Include="op\IProperSuperSet.cs" />
+    <Compile Include="op\ISuperSet %2813%29.cs" />
+    <Compile Include="op\PowerSetExprI.cs" />
+    <Compile Include="op\ProductExprI.cs" />
+    <Compile Include="op\ProductI.cs" />
+    <Compile Include="op\SetOpA.cs" />
+    <None Include="op\SigmaAlgebra.cs" />
+    <Compile Include="op\SuccessorX.cs" />
+    <Compile Include="op\SuperSet.cs" />
+    <Compile Include="op\Union%28T%29.cs" />
+    <Compile Include="op\UnionExprI%28TElement%29.cs" />
+    <Compile Include="op\UnionFinite.cs" />
+    <Compile Include="op\Xor.cs" />
+    <Compile Include="Partition%28T.cs" />
+    <Compile Include="Partition.cs" />
+    <Compile Include="property\Discrete.cs" />
+    <Compile Include="property\IContinuous.cs" />
+    <Compile Include="property\IDense.cs" />
+    <Compile Include="property\IndexSet.cs" />
+    <Compile Include="property\OrderExpr_I.cs" />
+    <Compile Include="Recursive.cs" />
+    <Compile Include="rel\Disjoint.cs" />
+    <Compile Include="rel\Joint.cs" />
+    <Compile Include="rel\relation\ProperSubset.cs" />
+    <Compile Include="rel\relation\Subset.cs" />
+    <Compile Include="rel\Subset.cs" />
+    <Compile Include="SequenceX.cs" />
+    <Compile Include="IndexSet.cs" />
+    <Compile Include="sequence\EmptyForIEnumerable%28TElement.cs" />
+    <Compile Include="Set%28T.cs" />
+    <Compile Include="Set.cs" />
+    <Compile Include="SetByPredicate%28T.cs" />
+    <Compile Include="SetI%28T.cs" />
+    <Compile Include="SetI.cs" />
+    <Compile Include="SetI2%28T.cs" />
+    <Compile Include="Set_FroHashSet%28T%28defaultEq.cs" />
+    <Compile Include="Set_hashSet%28T.cs" />
+    <Compile Include="Set_hashSetX%28T.cs" />
+    <Compile Include="SigmaAlgebra %2823%29.cs" />
+    <Compile Include="matrix\square\Square%28T%29X.cs" />
+    <Compile Include="Dict.cs" />
+    <Compile Include="Equal.cs" />
+    <Compile Include="FiniteSet.cs" />
+    <Compile Include="FiniteSetI%28T%29.cs" />
+    <Compile Include="FiniteSetI.cs" />
+    <Compile Include="FiniteSetI_randomSelect.cs" />
+    <Compile Include="Hashset%28T%29 as FiniteSet%28T%29.cs" />
+    <Compile Include="IsHashSet.cs" />
+    <Compile Include="PowerSetX.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TostrX.cs" />
+    <Compile Include="ToStrX2.cs" />
+    <Compile Include="TypeInstancesSet.cs" />
+    <Compile Include="X.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\nilnul%28130115\lib\nilnul%28130621.csproj">
+      <Project>{781321c7-7737-4b1f-ba13-048169502805}</Project>
+      <Name>nilnul%28130621</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nilnul.bit%28sln\lib\nilnul.bit130616.csproj">
+      <Project>{109c1344-5bea-4e1a-b662-2c7fe60ac428}</Project>
+      <Name>nilnul.bit130616</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nilnul.obj\lib\nilnul.obj.csproj">
+      <Project>{9807479b-f797-4a18-9feb-0cc576c27308}</Project>
+      <Name>nilnul.obj</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
